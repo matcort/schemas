@@ -4,7 +4,7 @@
   "description": "Esquema para Formulario de academia",
   "self": {
     "vendor": "com.analytics10.a10",
-    "name": "formularioAcademia",
+    "name": "formulario",
     "format": "jsonschema",
     "version": "1-0-0"
   },
