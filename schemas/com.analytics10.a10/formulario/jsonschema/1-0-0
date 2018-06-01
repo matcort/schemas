@@ -1,5 +1,5 @@
 {
-  "$schema": "https://raw.githubusercontent.com/matcort/schemas/master/com.analytics10.a10/formulario/jsonschema/1-0-0",
+  "$schema": "https://raw.githubusercontent.com/matcort/schemas/master/schemas/com.analytics10.a10/formulario/jsonschema/1-0-0",
   "description": "Esquema para Formulario de academia",
   "self": {
     "vendor": "com.analytics10.a10",
@@ -9,44 +9,74 @@
   },
   "type" : "object",
   "properties" : {
-    "telefono" : {
+    "schema" : {
       "type" : "string",
-      "minLength" : 1,
-      "maxLength" : 20
+      "minLength" : 67,
+      "maxLength" : 67
     },
-    "curso" : {
-      "type" : "string",
-      "minLength" : 1,
-      "maxLength" : 50
-    },
-    "email" : {
-      "type" : "string",
-      "minLength" : 1,
-      "maxLength" : 30
-    },
-    "empresa" : {
-      "type" : "string",
-      "minLength" : 1,
-      "maxLength" : 50
-    },
-    "tipsandtricks" : {
-      "type" : "boolean"
-    },
-    "nombre" : {
-      "type" : "string",
-      "minLength" : 1,
-      "maxLength" : 50
-    },
-    "comentarios" : {
-      "type" : "string",
-      "minLength" : 1,
-      "maxLength" : 300
-    },
-    "apellido" : {
-      "type" : "string",
-      "minLength" : 1,
-      "maxLength" : 50
+    "data" : {
+      "type" : "object",
+      "properties" : {
+        "schema" : {
+          "type" : "string",
+          "minLength" : 52,
+          "maxLength" : 52
+        },
+        "data" : {
+          "type" : "object",
+          "properties" : {
+            "telefono" : {
+              "type" : "string",
+              "minLength" : 8,
+              "maxLength" : 8
+            },
+            "curso" : {
+              "type" : "string",
+              "minLength" : 4,
+              "maxLength" : 4
+            },
+            "email" : {
+              "type" : "string",
+              "minLength" : 22,
+              "maxLength" : 22
+            },
+            "empresa" : {
+              "type" : "string",
+              "minLength" : 8,
+              "maxLength" : 8
+            },
+            "tipsandtricks" : {
+              "type" : "boolean"
+            },
+            "nombre" : {
+              "type" : "string",
+              "minLength" : 4,
+              "maxLength" : 4
+            },
+            "comentarios" : {
+              "type" : "string",
+              "minLength" : 6,
+              "maxLength" : 6
+            },
+            "apellido" : {
+              "type" : "string",
+              "minLength" : 5,
+              "maxLength" : 5
+            }
+          },
+          "additionalProperties" : false
+        }
+      },
+      "additionalProperties" : false
     }
   },
   "additionalProperties" : false
 }
+
+
+
+
+
+
+
+
