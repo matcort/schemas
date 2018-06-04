@@ -25,6 +25,15 @@
         "data" : {
           "type" : "object",
           "properties" : {
+          "vendor": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "enabled": {
+      "type": "boolean"
+    },
             "telefono" : {
               "type" : "string",
               "minLength" : 8,
@@ -72,7 +81,6 @@
   },
   "additionalProperties" : false
 }
-
 
 
 
